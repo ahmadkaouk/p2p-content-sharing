@@ -9,10 +9,9 @@ A combination of mDNS and libp2p kademlia protocol to to discover peer nodes:
   with boot nodes.
 
 ### Peer Routing
-Gossipsub, a successor of floodsub is used for peer routing.
-Gossipsub is an extensible base protocol based on gossip and randomized topic meshes. It is designed with advanced routing properties, amplification factors and optimized properties to transmit messages and gossip for specific application profiles.
-As opposed to floodsub that uses an inefficient strategy of network flooding, gossipsub make the network scalable and resilient (Peering agreements, Peer Scoring, Flood Publishing)
+Gossipsub, a successor of floodsub is used for peer routing. Gossipsub is an extensible base protocol based on gossip and randomized topic meshes. It is designed with advanced routing properties, amplification factors and optimized properties to transmit messages and gossip for specific application profiles.
 
+As opposed to floodsub that uses an inefficient strategy of network flooding, gossipsub make the network scalable and resilient (Peering agreements, Peer Scoring, Flood Publishing)
 
 ## Running the app
 In multiple terminals, preferably in different folders, each containing a different non empty `contents.json` file, run with `cargo run` and press enter to start the application.
@@ -26,10 +25,9 @@ There are several commands supported:
 * `ls c {peerId}` - list all public contents from the given peer
 * `create r Author|Content` - create a new content with the given data, the `|` are important as separators
 * `publish r {contentId}` - publish content with the given content ID
-
-- a baseline protocol, because it uses a simple but inefficient strategy of "network flooding" where messages are published to all the peers subscribed to a topic without a Casttree forming
+ 
 ## Inspirations
 Some of the code is inspired from those resources:
-- [libp2p tutorial: Build a peer-to-peer app in Rust] (https://blog.logrocket.com/libp2p-tutorial-build-a-peer-to-peer-app-in-rust/)
-- [Rust libp2p example] (https://github.com/libp2p/rust-libp2p/tree/master/examples)
+- [libp2p tutorial: Build a peer-to-peer app in Rust](https://blog.logrocket.com/libp2p-tutorial-build-a-peer-to-peer-app-in-rust/)
+- [Rust libp2p example](https://github.com/libp2p/rust-libp2p/tree/master/examples)
 The code is adapted and improved, to support and use more efficient p2p protocols and mechanisms (Peer discovery, Peer routing and content addressing)
