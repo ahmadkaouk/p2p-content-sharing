@@ -30,4 +30,5 @@ There are several commands supported:
 Some of the code is inspired from those resources:
 - [libp2p tutorial: Build a peer-to-peer app in Rust](https://blog.logrocket.com/libp2p-tutorial-build-a-peer-to-peer-app-in-rust/)
 - [Rust libp2p example](https://github.com/libp2p/rust-libp2p/tree/master/examples)
+- 
 The code is adapted and improved, to support and use more efficient p2p protocols and mechanisms (Peer discovery, Peer routing and content addressing)
